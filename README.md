@@ -12,3 +12,10 @@ The number guesser asks a user to select a number between 0 - 100, in the first 
 
 ##### FizzBuzz
 Fizzbuzz is a program that if the number is can be divided by 3 with no remainder will output Fizz and if the number can be divided by 5 with no remainder will output Buzz, if the number can be divided by both 3 and 5 with no remainder then the output is FizzBuzz
+
+##### Password Generator
+This password generator allows user to select from 3 options.
+- 1. Mixed case letters
+- 2. Mixed case letters and numbers
+- 3. Mixed case letters, numbers and special characters
+with the option to specify length and option to save to file
