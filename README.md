@@ -9,3 +9,6 @@ This is in an attempt to learn python, my aim is for projects to start very basi
 
 ##### Number Guesser
 The number guesser asks a user to select a number between 0 - 100, in the first iteration (numberguessersimple.py) this is just a set of simple if statements to determine if the number was correct. in the second iteration (numberguesserfunction) i have used a function to determine if the guess is correct
+
+##### FizzBuzz
+Fizzbuzz is a program that if the number is can be divided by 3 with no remainder will output Fizz and if the number can be divided by 5 with no remainder will output Buzz, if the number can be divided by both 3 and 5 with no remainder then the output is FizzBuzz
