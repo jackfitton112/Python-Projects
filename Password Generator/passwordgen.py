@@ -60,33 +60,36 @@ def savepassword(password):
     f.write("["+str(x)+"]"+''.join(password))
     f.close()
     return
+    
+while True:
+    print("""
+      _____                                    _    _____                           _
+     |  __ \                                  | |  / ____|                         | |
+     | |__) |_ _ ___ _____      _____  _ __ __| | | |  __  ___ _ __   ___ _ __ __ _| |_ ___  _ __
+     |  ___/ _` / __/ __\ \ /\ / / _ \| '__/ _` | | | |_ |/ _ \ '_ \ / _ \ '__/ _` | __/ _ \| '__|
+     | |  | (_| \__ \__ \\ V  V / (_) | | | (_| | | |__| |  __/ | | |  __/ | | (_| | || (_) | |
+     |_|   \__,_|___/___/ \_/\_/ \___/|_|  \__,_|  \_____|\___|_| |_|\___|_|  \__,_|\__\___/|_|
 
-print("""
-  _____                                    _    _____                           _
- |  __ \                                  | |  / ____|                         | |
- | |__) |_ _ ___ _____      _____  _ __ __| | | |  __  ___ _ __   ___ _ __ __ _| |_ ___  _ __
- |  ___/ _` / __/ __\ \ /\ / / _ \| '__/ _` | | | |_ |/ _ \ '_ \ / _ \ '__/ _` | __/ _ \| '__|
- | |  | (_| \__ \__ \\ V  V / (_) | | | (_| | | |__| |  __/ | | |  __/ | | (_| | || (_) | |
- |_|   \__,_|___/___/ \_/\_/ \___/|_|  \__,_|  \_____|\___|_| |_|\___|_|  \__,_|\__\___/|_|
+    \nBy Jack Fitton """)
 
-\nBy Jack Fitton """)
+    print("Please select one of the following options:\n1.Mixed case letters (AbCDefGH)\n2.Mixed case letters and numbers (A4b5c8F)\n3.Mixed case letters, numbers and special characters (A!1b4$c)")
 
-print("Please select one of the following options:\n1.Mixed case letters (AbCDefGH)\n2.Mixed case letters and numbers (A4b5c8F)\n3.Mixed case letters, numbers and special characters (A!1b4$c)")
+    selection = int(input("\nPick an option (1, 2 or 3): "))
+    length = int(input("Pick the length of your password: "))
 
-selection = int(input("\nPick an option (1, 2 or 3): "))
-length = int(input("Pick the length of your password: "))
+    passwordout = selector(selection, length)
+    print ("\n\nYour password is: ")
 
-passwordout = selector(selection, length)
-print ("\n\nYour password is: ")
+    print (''.join(passwordout))
 
-print (''.join(passwordout))
+    save = input("\nWould you like to save this file? Y/N: ")
+    save = save.upper()
 
-save = input("\nWould you like to save this file? Y/N: ")
-save = save.upper()
-
-if save == "Y":
-    print ("Saving password.txt...")
-    savepassword(passwordout)
-    print("\n\nPassword has been saved")
-else:
-    print("Thank you for using this service!")
+    if save == "Y":
+        print ("Saving password.txt...")
+        savepassword(passwordout)
+        print("\n\nPassword has been saved")
+        break
+    else:
+        print("Thank you for using this service!")
+        break
