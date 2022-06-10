@@ -18,4 +18,5 @@ This password generator allows user to select from 3 options.
 - 1. Mixed case letters
 - 2. Mixed case letters and numbers
 - 3. Mixed case letters, numbers and special characters
+
 with the option to specify length and option to save to file
