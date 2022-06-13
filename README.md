@@ -20,3 +20,8 @@ This password generator allows user to select from 3 options.
 - 3. Mixed case letters, numbers and special characters
 
 with the option to specify length and option to save to file
+
+
+##### Calculator
+
+- Calculates things... (not very well)
